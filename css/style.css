@@ -1,0 +1,188 @@
+body{
+  margin: 0;
+}
+section{
+  display: flex;
+  height: 100vh;
+  background-color: #000000;
+  transition: .9s;
+}
+.padre{
+  margin: 0 auto;
+}
+.contenedor{
+  display: block;
+  margin: 35px auto;
+  text-align: center;
+  background-image: url("../Imagenes/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65%;
+  width: 75%;
+  border: 10px solid #131d40;
+  transition: 2s;
+}
+.container-des{
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.texto{
+  width: 100%;
+  background-color: rgba(0, 0, 264, 0.3);
+  transition: .09s;
+}
+.texto::after{
+  content: " 1   Universo ";
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Neucha', cursive;
+  font-size: 90px;
+
+}
+.txtfirst{
+  font-size: 66px;
+  color: white;
+  transition: 2s;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+.descripcion::after{
+  color: aliceblue;
+  content: "⦿ Está compuesto por galaxias y adentro de las galaxias hay planetas, satélites, astros, estrellas, gas, polvo cósmico y nebulosas.";
+  font-family: 'Tangerine', cursive;
+  font-size: 55px;
+}
+.img1{
+width: 70%;
+}
+.secundario{
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+
+}
+.secundario::after{
+  content: "⇥ Haz mas pequeño el navegador ⇤";
+}
+
+@media screen and (max-width:1050px) {
+  section{
+    background-color: #131d40;
+  }
+  .contenedor{
+    background-image: url("../Imagenes/background2.jpg");
+    background-size: cover;
+    height: 60%;
+    background-position: center;
+    border: 10px solid #14213D;
+
+  }
+  .texto::after{
+    content: " 2   Galaxia ";
+    color: white;
+
+    font-size: 80px;
+  }
+  .texto{
+    background-color: rgba(116, 205, 264, 0.3);
+  }
+  .txtfirst{
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+  .descripcion::after{
+    content: "⦿ Es un gran conjunto de estrellas que forman como islas en el espacio. Están también formadas por planetas, gas, polvo cósmicos y nebulosas. ";
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  section{
+    background-color: #14213D ;
+  }
+  .contenedor{
+    background-image: url("../Imagenes/background3.png");
+    background-size: cover;
+    height: 50%;
+    background-position: center;
+    border: 8px solid #284474;
+  }
+  .texto::after{
+  content: " 3   La Via Lactea ";
+  color: white;
+  font-size: 65px;
+  }
+  .texto{
+    background-color: rgba(54, 102, 96, 0.3);
+  }
+  .descripcion::after{
+    content: "⦿ Es nuestra galaxia. Está formada por cien millones de estrellas. Se la llama así porque las estrellas forman una gran masa blanca que parece un camino de leche derramada. Tiene forma de espiral. ";
+  }
+}
+
+@media screen and (max-width:600px) {
+  section{
+    background-color: #284474 ;
+
+  }
+  .contenedor{
+    background-image: url("../Imagenes/background4.jpg");
+    background-size: cover;
+    height: 40%;
+    background-position: center;
+    border: 6px solid #225C67;
+    margin: 112px auto;
+  }
+  .txtfirst{
+    margin-top: -150px;
+  }
+  .texto::after{
+  content: " 4   Sistema Solar ";
+  color: white;
+    font-size: 45px;
+  }
+  .texto{
+    background-color: rgba(189, 73, 96, 0.3);
+  }
+  .descripcion::after{
+    content: "⦿ Es la región de nuestra galaxia que se encuentra bajo la influencia del Sol. Está formado por el Sol y ocho planetas llamados: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno. Plutón hasta el 2006 se consideraba un planeta ha pasado a llamarse planeta enano o planetoide.";
+    font-size: 25px;
+    transition: 3s;
+  }
+  .secundario{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  section{
+    background-color: #225C67 ;
+  }
+  .contenedor{
+    background-image: url("../Imagenes/background5.jpg");
+    background-size: cover;
+    height: 30%;
+    background-position: center;
+    border: 4px solid #567CA9;
+  }
+  .texto::after{
+  content: " 5   Tierra ";
+  color: white;
+  font-size: 35px;
+  }
+  .texto{
+    background-color: rgba(255, 255, 228, 0.3);
+  }
+  .descripcion::after{
+    content: "⦿ Visto desde el espacio, en nuestro planeta predomina un bello color azul. Esto se debe al color de los océanos que cubren más de dos tercios de su superficie. Ésta es delgada, pero suficiente como para que se desarrolle la vida. ";
+    font-size: 17px;
+  }
+  .secundario::after{
+    content: "⇤Haz grande el navegador ⇥ "
+  }
+}
